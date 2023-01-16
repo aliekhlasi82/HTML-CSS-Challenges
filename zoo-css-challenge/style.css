@@ -1,12 +1,18 @@
 * {
   font-family: sans-serif;
+
+  word-spacing: 2px;
+  line-height: 2;
+}
+body {
+  margin: 0%;
 }
 
 header {
   background-color: #211a1d;
   color: #ffffff;
   width: 100%;
-  padding: 20px;
+  padding: 50px 50px 20px 20px;
 }
 
 nav {
@@ -76,6 +82,7 @@ footer {
 }
 
 .introduction {
+  background-color: #ffffff;
 }
 
 #badge {
@@ -85,8 +92,9 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
+  transition: 0.99s;
 
   display: flex;
   justify-content: center;
@@ -94,13 +102,13 @@ footer {
   flex-direction: column;
 }
 
-#badge:hover {
-  background-color: yellow;
-}
-
 #badge p {
   text-align: center;
   font-size: 125%;
+}
+#badge:hover {
+  background-color: #56e39f;
+  color: rgb(68, 0, 255);
 }
 
 .image-container img {
@@ -108,22 +116,33 @@ footer {
   border: 5px solid #747c92;
 }
 
-.image-container img:first-of-type {
-  vertical-align: bottom;
-}
-
 .tigers {
   background-color: #0b3c49;
   color: #f0e100;
 }
+.tigers h2,
+h3 {
+  color: #abe8e4;
+}
 
 .giraffe {
-  background-color: #465775;
+  background-color: #483c46;
   color: #56e39f;
 }
 
-.giraffe h2 {
-  color: #ef6f6c;
+.giraffe h2,
+h3 {
+  color: #f4743b;
+}
+.giraffe p {
+  color: #beee62;
+}
+.giraffe p:nth-child(2) {
+  font-size: 24px;
+}
+
+.news h2 {
+  text-align: center;
 }
 
 .card {
@@ -164,6 +183,7 @@ footer {
 
 .education-container {
   background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 20px;
   padding: 50px;
   max-width: 400px;
 }
@@ -173,6 +193,13 @@ footer {
   margin-bottom: 1em;
 }
 
+.education-container button {
+  font-size: 20px;
+  border-radius: 30px;
+}
+.education-container button:hover {
+  color: #79c1ed;
+}
 /*Membership*/
 
 .membership {
@@ -188,8 +215,24 @@ footer {
   color: #ff7f11;
 }
 
+.membership p {
+  max-width: 700px;
+  text-align: center;
+}
 /*Programs*/
 
 .programs .card {
   display: block;
+}
+#logo {
+  border: none;
+}
+#first {
+  border-color: #f0e100;
+}
+#second {
+  border-color: green;
+}
+#third {
+  border-color: blue;
 }
